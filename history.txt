@@ -1,0 +1,155 @@
+    1  su
+    2  sudo apt install terminator
+    3  sudo apt update
+    4  sudo apt install terminator
+    5  su
+    6  man passwd
+    7  apropos network
+    8  man grep
+    9  apropos man user
+   10  apropos man useradd
+   11  clear
+   12  history
+   13  13
+   14  asdsadsadasd
+   15  whoami
+   16  id
+   17  sudo useradd juan
+   18  sudo groupadd prueba
+   19  id juan 
+   20  sudo usermod -aG prueba juan
+   21  id juan
+   22  grep prueba/etc/group
+   23  cat /etc/passwd
+   24  clear
+   25  cat /etc/group
+   26  grep prueba /etc/group
+   27  pwd
+   28  sudo useradd agus
+   29  sudo groupadd prueba2
+   30  sudo usermod -aG prueba2 juan && sudo usermod -aG prueba2 agus
+   31  id agus
+   32  id juan
+   33  clear
+   34  ls -l
+   35  ls
+   36  tree
+   37  mkdir 315
+   38  cd 315
+   39  pwd
+   40  tree
+   41  touch info.txt
+   42  ls
+   43  nano info.txt
+   44  echo "hola mundo" info.txt 
+   45  echo "hola mundo" >> info.txt 
+   46  nano info.txt
+   47  echo "hola mundo" > info2.txt 
+   48  nano info2.txt 
+   49  ls
+   50  echo "hola mundo" >> info3.txt 
+   51  ls
+   52  nano info3.txt 
+   53  tree
+   54  cd ..
+   55  tree
+   56  cd 315
+   57  ls
+   58  cp -r 
+   59  cp --help
+   60  cp -r --recursive
+   61  ls
+   62  touch > informacion.txt
+   63  tree >> directorio.txt
+   64  ls
+   65  directorio.txt
+   66  nano directorio.txt
+   67  echo "df
+   68  "
+   69  df
+   70  locate info.txt 
+   71  sudo locate info.txt 
+   72  locate info.txt 
+   73  apt install plocate
+   74  sudo apt install plocate
+   75  locate info.txt 
+   76  find info.txt
+   77  df
+   78  df -h
+   79  lsblk
+   80  exit
+   81  sudo lsdisk -l
+   82  sudo lsdisk
+   83  lsdisk
+   84  fdisk
+   85  sudo lsblk 
+   86  sudo lsblk -l
+   87  sudo fdisk /dev/sdb
+   88  sudo apt install lvm
+   89  sudo apt install lvm2
+   90  pvs create
+   91  sudo lsblk
+   92  wipefs -a /dev/sdb1
+   93  sudo wipefs -a /dev/sdb1
+   94  sudo wipefs -a /dev/sdb2
+   95  sudo wipefs -a /dev/sdb3
+   96  sudo lsblk
+   97  sudo pvcreate /dev/sdb1 /dev/sdb2 /dev/sdb3
+   98  pvs
+   99  sudo pvs
+  100  sudo vgcreate datos /dev/sdb1
+  101  sudo vgextend datos /dev/sdb2
+  102  sudo vgextend datos /dev/sdb3
+  103  vgs
+  104  sudo vgs
+  105  lvcreate -L +4GB /dev/mapper/datos
+  106  sudo lvcreate -L +4GB /dev/mapper/datos
+  107  lvs
+  108  sudo lvs
+  109  sudo lvcreate -L +1GB /dev/mapper/datos-www
+  110  sudo lvs
+  111  sudo lvextend -L +1GB /dev/mapper/datos-www
+  112  sudo lvs
+  113  sudo lvcreate www
+  114  sudo lvcreate /dev/mapper/datos-www
+  115  sudo lvcreate /dev/mapper/datos/www
+  116  sudo lvextend -L +1GB /dev/mapper/datos
+  117  sudo lvcreate -L +1GB /dev/mapper/datos
+  118  sudo lvs
+  119  sudo lvextend -l 100%FREE /dev/mapper/datos
+  120  sudo lvcreate -L +1GB /dev/mapper/datos-lvol1
+  121  sudo lvextend -L +1GB /dev/mapper/datos-lvol1
+  122  sudo lvs
+  123  tree /dev/mapper
+  124  sudo lvextend -l 100%FREE /dev/mapper/datos-lvol1
+  125  sudo lvs
+  126  sudo lvextend -l +100%FREE /dev/mapper/datos-lvol1
+  127  sudo lvs
+  128  mkfs.ext4 /dev/mapper/datos-lvol0
+  129  sudo mkfs.ext4 /dev/mapper/datos-lvol0
+  130  sudo mkfs.ext4 /dev/mapper/datos-lvol1
+  131  sudo mount /dev/mapper/datos-lvol1 /salvas
+  132  mkdir /salvas
+  133  sudo mkdir /salvas
+  134  sudo mkdir salvas
+  135  sudo mkdir www
+  136  sudo mount /dev/mapper/datos-lvol1 salvas
+  137  sudo mount /dev/mapper/datos-lvol0 www
+  138  sudo umount salvas
+  139  sudo umount www
+  140  sudo mount /dev/mapper/datos-lvol1 www
+  141  sudo mount /dev/mapper/datos-lvol0 salvas
+  142  history
+  143  nano history.txt
+  144  ls
+  145  nano history.txt
+  146  ssh-keygen
+  147  cat %HOME/.ssh/id_rsa.pub
+  148  cat $HOME/.ssh/id_rsa.pub
+  149  mkdir repogit
+  150  cd repogit/
+  151  git clone git@github.com:aleexcm/lvm-2-.git
+  152  sudo apt install git
+  153  git clone git@github.com:aleexcm/lvm-2-.git
+  154  ls
+  155  history
